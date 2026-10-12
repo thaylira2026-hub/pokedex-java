@@ -1,0 +1,65 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_source": "insomnia.desktop.app:v8.0.0",
+  "resources": [
+    {
+      "_id": "wrk_pokedex",
+      "_type": "workspace",
+      "name": "API Pokedex",
+      "scope": "collection"
+    },
+    {
+      "_id": "req_wrk_pokedex_0",
+      "_type": "request",
+      "parentId": "wrk_pokedex",
+      "name": "findAll",
+      "method": "GET",
+      "url": "http://localhost:8080/pokedex",
+      "body": {},
+      "headers": [],
+      "metaSortKey": 0
+    },
+    {
+      "_id": "req_wrk_pokedex_1",
+      "_type": "request",
+      "parentId": "wrk_pokedex",
+      "name": "findByCodigo",
+      "method": "GET",
+      "url": "http://localhost:8080/pokedex/1",
+      "body": {},
+      "headers": [],
+      "metaSortKey": -1
+    },
+    {
+      "_id": "req_wrk_pokedex_2",
+      "_type": "request",
+      "parentId": "wrk_pokedex",
+      "name": "save",
+      "method": "POST",
+      "url": "http://localhost:8080/pokedex",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Squirtle\",\n  \"tipo\": \"Água\",\n  \"nivel\": 10,\n  \"peso\": 9.0,\n  \"dataDaCaptura\": \"2026-05-02\"\n}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaSortKey": -2
+    },
+    {
+      "_id": "req_wrk_pokedex_3",
+      "_type": "request",
+      "parentId": "wrk_pokedex",
+      "name": "delete",
+      "method": "DELETE",
+      "url": "http://localhost:8080/pokedex/3",
+      "body": {},
+      "headers": [],
+      "metaSortKey": -3
+    }
+  ]
+}
